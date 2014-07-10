@@ -38,6 +38,5 @@ Quizzes
 
 The installation was successful!
 Open up http://localhost:8080 to get started.
-
 -------------------------------------------------------------------------------
 EOF
