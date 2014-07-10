@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: quizzes-web_development
+
+test:
+  <<: *default
+  database: quizzes-web_test
+
+production:
+  <<: *default
+  database: quizzes-web_production
+  username: quizzes-web
+  password: <%= ENV['QUIZZES-WEB_DATABASE_PASSWORD'] %>
